@@ -168,5 +168,10 @@ function button(textArea){
 }
 
 function empty(){
-    localStorage.clear();
+    let clearSchedule = confirm("Are you sure you want to clear your schedule?");
+    if(clearSchedule === true) {
+        localStorage.clear();
+        location.reload();
+    }
+    
 }

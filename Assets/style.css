@@ -15,10 +15,9 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(135, 206, 228);
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .description{
@@ -68,4 +67,12 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.lead2 {
+  text-decoration: underline;
+}
+
+.input-group-text{
+  background-color: rgb(135, 206, 228);
 }
