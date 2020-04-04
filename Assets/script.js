@@ -1,21 +1,21 @@
 $(document).ready(() => {
-    const aTextBg9 = document.querySelector("#textbg9");
-    const aTextBg10 = document.querySelector("#textbg10");
-    const aTextBg11 = document.querySelector("#textbg11");
-    const aTextBg12 = document.querySelector("#textbg12");
-    const aTextBg1 = document.querySelector("#textbg1");
-    const aTextBg2 = document.querySelector("#textbg2");
-    const aTextBg3 = document.querySelector("#textbg3");
-    const aTextBg4 = document.querySelector("#textbg4");
-    const aTextBg5 = document.querySelector("#textbg5");
+    const aTextBg9 = $("#textbg9");
+    const aTextBg10 = $("#textbg10");
+    const aTextBg11 = $("#textbg11");
+    const aTextBg12 = $("#textbg12");
+    const aTextBg1 = $("#textbg1");
+    const aTextBg2 = $("#textbg2");
+    const aTextBg3 = $("#textbg3");
+    const aTextBg4 = $("#textbg4");
+    const aTextBg5 = $("#textbg5");
     
     
 
     
     function todaysDate(){
-        let head = document.createElement("H4")
+        let head = $("<H4>")
         head.innerHTML = moment().format('dddd, LL');
-        document.getElementById("currentDay").appendChild(head)
+        $("currentDay").append(head)
     }
     todaysDate();
 
@@ -24,129 +24,129 @@ $(document).ready(() => {
         dateTime = moment().format('kmm')
         console.log(dateTime)
         if(Number(dateTime) < 900) {
-            aTextBg9.setAttribute("class", "form-control future")
-            aTextBg10.setAttribute("class", "form-control future")
-            aTextBg11.setAttribute("class", "form-control future")
-            aTextBg12.setAttribute("class", "form-control future")
-            aTextBg1.setAttribute("class", "form-control future")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control future")
+            aTextBg10.attr("class", "form-control future")
+            aTextBg11.attr("class", "form-control future")
+            aTextBg12.attr("class", "form-control future")
+            aTextBg1.attr("class", "form-control future")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1000) {
-            aTextBg9.setAttribute("class", "form-control present")
-            aTextBg10.setAttribute("class", "form-control future")
-            aTextBg11.setAttribute("class", "form-control future")
-            aTextBg12.setAttribute("class", "form-control future")
-            aTextBg1.setAttribute("class", "form-control future")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control present")
+            aTextBg10.attr("class", "form-control future")
+            aTextBg11.attr("class", "form-control future")
+            aTextBg12.attr("class", "form-control future")
+            aTextBg1.attr("class", "form-control future")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1100) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control present")
-            aTextBg11.setAttribute("class", "form-control future")
-            aTextBg12.setAttribute("class", "form-control future")
-            aTextBg1.setAttribute("class", "form-control future")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control present")
+            aTextBg11.attr("class", "form-control future")
+            aTextBg12.attr("class", "form-control future")
+            aTextBg1.attr("class", "form-control future")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1200) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control present")
-            aTextBg12.setAttribute("class", "form-control future")
-            aTextBg1.setAttribute("class", "form-control future")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control present")
+            aTextBg12.attr("class", "form-control future")
+            aTextBg1.attr("class", "form-control future")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1300) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control present")
-            aTextBg1.setAttribute("class", "form-control future")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control present")
+            aTextBg1.attr("class", "form-control future")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1400) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control present")
-            aTextBg2.setAttribute("class", "form-control future")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control present")
+            aTextBg2.attr("class", "form-control future")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1500) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control past")
-            aTextBg2.setAttribute("class", "form-control present")
-            aTextBg3.setAttribute("class", "form-control future")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control past")
+            aTextBg2.attr("class", "form-control present")
+            aTextBg3.attr("class", "form-control future")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1600) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control past")
-            aTextBg2.setAttribute("class", "form-control past")
-            aTextBg3.setAttribute("class", "form-control present")
-            aTextBg4.setAttribute("class", "form-control future")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control past")
+            aTextBg2.attr("class", "form-control past")
+            aTextBg3.attr("class", "form-control present")
+            aTextBg4.attr("class", "form-control future")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1700) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control past")
-            aTextBg2.setAttribute("class", "form-control past")
-            aTextBg3.setAttribute("class", "form-control past")
-            aTextBg4.setAttribute("class", "form-control present")
-            aTextBg5.setAttribute("class", "form-control future")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control past")
+            aTextBg2.attr("class", "form-control past")
+            aTextBg3.attr("class", "form-control past")
+            aTextBg4.attr("class", "form-control present")
+            aTextBg5.attr("class", "form-control future")
         }
         else if(Number(dateTime) < 1800) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control past")
-            aTextBg2.setAttribute("class", "form-control past")
-            aTextBg3.setAttribute("class", "form-control past")
-            aTextBg4.setAttribute("class", "form-control past")
-            aTextBg5.setAttribute("class", "form-control present")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control past")
+            aTextBg2.attr("class", "form-control past")
+            aTextBg3.attr("class", "form-control past")
+            aTextBg4.attr("class", "form-control past")
+            aTextBg5.attr("class", "form-control present")
         }
         else if(Number(dateTime) < 2500) {
-            aTextBg9.setAttribute("class", "form-control past")
-            aTextBg10.setAttribute("class", "form-control past")
-            aTextBg11.setAttribute("class", "form-control past")
-            aTextBg12.setAttribute("class", "form-control past")
-            aTextBg1.setAttribute("class", "form-control past")
-            aTextBg2.setAttribute("class", "form-control past")
-            aTextBg3.setAttribute("class", "form-control past")
-            aTextBg4.setAttribute("class", "form-control past")
-            aTextBg5.setAttribute("class", "form-control past")
+            aTextBg9.attr("class", "form-control past")
+            aTextBg10.attr("class", "form-control past")
+            aTextBg11.attr("class", "form-control past")
+            aTextBg12.attr("class", "form-control past")
+            aTextBg1.attr("class", "form-control past")
+            aTextBg2.attr("class", "form-control past")
+            aTextBg3.attr("class", "form-control past")
+            aTextBg4.attr("class", "form-control past")
+            aTextBg5.attr("class", "form-control past")
         }
     }
     hour();
-
+    // this function updateText() would not work with $("#textbg9") and etc for some reason
     function updateText(){
         document.getElementById("textbg9").value = localStorage.getItem("textbg9")
         document.getElementById("textbg10").value = localStorage.getItem("textbg10")
